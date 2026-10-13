@@ -1,0 +1,121 @@
+/* ARG home page overrides
+   Brand color taken from arg.lk (theme-color #1bb0ce) */
+:root {
+  --arg-primary: #1bb0ce;
+  --arg-primary-dark: #0e8fa9;
+  --arg-navy: #0c2430;
+  --arg-navy-2: #123647;
+  --arg-light: #f1f8fa;
+  --primary-color-one: #1bb0ce;
+  --menu-active-color: #1bb0ce;
+  --preloader-background-color: #1bb0ce;
+  --footer-default-bgcolor: #0c2430;
+}
+
+/* ---------- top bar ---------- */
+.arg-topbar { background: var(--arg-primary); color: #fff; font-size: 14px; }
+.arg-topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 30px; flex-wrap: wrap; }
+.arg-topbar a { color: #fff; margin-right: 22px; }
+.arg-topbar a:last-child { margin-right: 0; }
+.arg-topbar i { margin-right: 6px; }
+.arg-topbar .tag { font-weight: 600; }
+@media (max-width: 767px) { .arg-topbar .tag { display: none; } .arg-topbar .wrap { padding: 8px 15px; } .arg-topbar a { margin-right: 12px; } }
+
+/* ---------- header (dark, because arg.lk uses its white logo) ---------- */
+.header_area .header.style_five { background: var(--arg-navy); }
+.header_area .header .logo img { max-height: 62px; width: auto; }
+.header.style_five .header_content_collapse .header_menu_box .navbar_nav > li > a.nav-link,
+.header.style_five .header_content_collapse .header_right_content .contntent.phone a,
+.header.style_five .header_content_collapse .header_right_content .contntent.phone small,
+.header.style_five .header_content_collapse .header_right_content .round_btn button { color: #fff; }
+.header.style_five .header_content_collapse .header_menu_box .navbar_nav > li > a.nav-link:hover,
+.header.style_five .header_content_collapse .header_menu_box .navbar_nav > li.active > a.nav-link { color: var(--arg-primary); }
+.header .navbar_togglers .line { background: #fff; }
+
+/* ---------- hero ---------- */
+.arg-hero .image-layer { background-size: cover; background-position: center; }
+.arg-hero .slider_content h1 { color: #fff; }
+.arg-hero .slider_content h6 { color: var(--arg-primary); letter-spacing: .5px; }
+.arg-hero .slider_content p { color: #dbe9ee; }
+.arg-hero .slide-item .btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.arg-hero .theme-btn.ghost { background: transparent; border: 2px solid #fff; color: #fff; }
+.arg-hero .theme-btn.ghost:hover { background: #fff; color: var(--arg-navy); }
+
+/* ---------- vision & mission ---------- */
+.arg-vm { background: var(--arg-light); padding: 80px 0; }
+.arg-vm .box { background: #fff; border-top: 4px solid var(--arg-primary); padding: 40px 36px; height: 100%; box-shadow: 0 8px 30px rgba(12,36,48,.07); }
+.arg-vm .box h4 { font-size: 26px; margin-bottom: 14px; color: var(--arg-navy); }
+.arg-vm .box p { margin: 0; color: #4a4e56; line-height: 1.8; }
+
+/* ---------- who we are ---------- */
+.arg-about .logo-panel { background: var(--arg-navy); border-radius: 6px; padding: 60px 30px; text-align: center; position: relative; }
+.arg-about .logo-panel img { max-width: 280px; width: 100%; height: auto; }
+.arg-about .logo-panel .years { position: absolute; left: 24px; bottom: -24px; background: var(--arg-primary); color: #fff; padding: 16px 24px; font-weight: 700; font-size: 20px; line-height: 1.2; }
+.arg-about .btn-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+.arg-about .theme-btn.outline { background: transparent; border: 2px solid var(--arg-primary); color: var(--arg-primary); }
+.arg-about .theme-btn.outline:hover { background: var(--arg-primary); color: #fff; }
+
+/* ---------- distributions ---------- */
+.arg-dist { background: var(--arg-light); }
+.arg-dist .brand-card { background: #fff; border: 1px solid #dfeaee; border-radius: 6px; padding: 26px 24px 28px; text-align: center; height: 100%; display: flex; flex-direction: column; align-items: center; transition: box-shadow .2s, border-color .2s; }
+.arg-dist .brand-card:hover { border-color: var(--arg-primary); box-shadow: 0 10px 30px rgba(12,36,48,.09); }
+.arg-dist .brand-card .img { height: 150px; display: flex; align-items: center; justify-content: center; width: 100%; margin-bottom: 18px; }
+.arg-dist .brand-card .img img { max-height: 150px; max-width: 100%; width: auto; object-fit: contain; }
+.arg-dist .brand-card h3 { font-size: 21px; margin: 0 0 8px; color: var(--arg-navy); }
+.arg-dist .brand-card p { font-size: 15px; color: #5b6168; margin: 0 0 14px; }
+.arg-dist .brand-card .more { margin-top: auto; font-weight: 600; color: var(--arg-primary); }
+.arg-dist .brand-card .more:hover { color: var(--arg-primary-dark); }
+
+/* ---------- companies ---------- */
+.arg-companies { background: var(--arg-navy); }
+.arg-companies .title_sections h2, .arg-companies .title_sections p { color: #fff; }
+.arg-companies .title_sections p { opacity: .85; }
+.arg-companies .company { display: block; background: var(--arg-navy-2); border: 1px solid rgba(255,255,255,.08); border-radius: 6px; padding: 22px; text-align: center; height: 100%; transition: border-color .2s, transform .2s; }
+.arg-companies .company:hover { border-color: var(--arg-primary); transform: translateY(-4px); }
+.arg-companies .company .img { height: 150px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 4px; margin-bottom: 16px; padding: 12px; }
+.arg-companies .company .img img { max-height: 126px; max-width: 100%; width: auto; object-fit: contain; }
+.arg-companies .company h3 { color: #fff; font-size: 20px; margin: 0; }
+
+/* ---------- contact call-to-action ---------- */
+.arg-cta { background: linear-gradient(120deg, var(--arg-primary-dark), var(--arg-primary)); color: #fff; text-align: center; padding: 90px 0; }
+.arg-cta .before { font-weight: 600; opacity: .9; margin-bottom: 10px; }
+.arg-cta h2 { color: #fff; font-size: 44px; margin-bottom: 30px; }
+.arg-cta .theme-btn { background: #fff; color: var(--arg-navy); }
+.arg-cta .theme-btn:hover { background: var(--arg-navy); color: #fff; }
+@media (max-width: 767px) { .arg-cta h2 { font-size: 30px; } }
+
+/* ---------- footer ---------- */
+.footer_area.arg-footer { background: var(--arg-navy); color: #c9d8de; }
+.arg-footer h2.color_dark, .arg-footer h4 { color: #fff !important; }
+.arg-footer a { color: #c9d8de; }
+.arg-footer a:hover { color: var(--arg-primary); }
+.arg-footer ul.links { list-style: none; padding: 0; margin: 0; }
+.arg-footer ul.links li { margin-bottom: 10px; }
+.arg-footer .foot-logo img { max-height: 70px; width: auto; margin-bottom: 18px; }
+.arg-footer .contact-line { display: flex; gap: 12px; margin-bottom: 12px; }
+.arg-footer .contact-line i { color: var(--arg-primary); margin-top: 4px; }
+.arg-footer .social a { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; margin-right: 10px; color: #fff; }
+.arg-footer .social a:hover { background: var(--arg-primary); border-color: var(--arg-primary); color: #fff; }
+.arg-footer .copy { border-top: 1px solid rgba(255,255,255,.12); padding: 22px 0; text-align: center; font-size: 14px; }
+
+/* ---------- header spacing fixes ---------- */
+@media (min-width: 992px) {
+  .header.style_five .header_content_collapse .header_menu_box .navbar_nav > li > a.nav-link { padding-left: 14px; padding-right: 14px; white-space: nowrap; }
+  .header.style_five .header_content_collapse .header_right_content .contntent.phone { white-space: nowrap; }
+  .header.style_five .header_content_collapse .header_right_content .contntent.phone small { display: none; }
+}
+@media (min-width: 992px) {
+  .header.style_five .container-fluid { padding: 0 30px; }
+  .header.style_five .header_content_collapse .navigation_menu .navbar_nav { white-space: nowrap; }
+  .header.style_five .header_content_collapse .navigation_menu .navbar_nav > li,
+  .header.style_five .header_content_collapse .navigation_menu .navbar_nav > li.dropdown { margin-right: 0 !important; }
+  .header.style_five .header_content_collapse .header_right_content ul li { margin-left: 18px; }
+}
+@media (min-width: 992px) {
+  .header.style_five .header_content_collapse .navigation_menu .navbar_nav > li.dropdown > a.nav-link { padding-right: 30px; }
+}
+
+/* heading color fixes on dark sections */
+.arg-companies .title_all_box .title_sections h2,
+.arg-companies .title_all_box .title_sections p { color: #fff !important; }
+.arg-about .logo-panel { min-height: 320px; display: flex; align-items: center; justify-content: center; }
